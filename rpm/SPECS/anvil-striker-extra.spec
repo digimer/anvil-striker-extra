@@ -8,7 +8,7 @@ Summary:        Alteeve Anvil! Striker dashboard extras
 
 License:        GPLv2+
 URL:            https://github.com/digimer/anvil-striker-extra
-Source0:        https://github.com/digimer/anvil-striker-extra/archive/master.tar.gz
+Source0:        https://www.alteeve.com/an-repo/f28/SOURCES/anvil-striker-extra-3.0.tar.gz
 BuildArch:      noarch
 
 
