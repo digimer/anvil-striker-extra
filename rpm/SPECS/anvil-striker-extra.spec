@@ -3,7 +3,7 @@
 %define anvilgroup    admin
 Name:           anvil-striker-extra
 Version:        3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Alteeve Anvil! Striker dashboard extras
 
 License:        GPLv2+
@@ -13,9 +13,9 @@ BuildArch:      noarch
 
 
 %description
-This package provides files provided by upstream projects, like 'vmlinuz' and 
-'initrd.img' from upstream netinstall media used for Striker's "Install Target"
-feature.
+This package provides files provided by upstream projects, like 'vmlinuz', 
+'initrd.img' and 'install.img' from upstream netinstall media used for 
+Striker's "Install Target" feature. 
 
 The version of this package is not kept in step with the main anvil repository.
 
@@ -27,7 +27,9 @@ The version of this package is not kept in step with the main anvil repository.
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_sharedstatedir}/tftpboot/
+mkdir -p $RPM_BUILD_ROOT/%{_localstatedir}/www/html/
 cp -Rp tftpboot/* $RPM_BUILD_ROOT/%{_sharedstatedir}/tftpboot/
+cp -Rp html/* $RPM_BUILD_ROOT/%{_localstatedir}/www/html/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -36,7 +38,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc README.md 
 %{_sharedstatedir}/tftpboot/fedora28/*
+%{_localstatedir}/www/html/fedora28/*
 
 %changelog
+* Mon Nov 05 2018 Madison Kelly <mkelly@alteeve.ca> 3.0-2
+- Added the install.img file.
+- Added a custome comps.xml for fedora28.
+
 * Thu Nov 01 2018 Madison Kelly <mkelly@alteeve.ca> 3.0-1
 - First release, includes tftpboot files from Fedora28.
