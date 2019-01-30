@@ -28,7 +28,8 @@ The version of this package is not kept in step with the main anvil repository.
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_sharedstatedir}/tftpboot/
 mkdir -p $RPM_BUILD_ROOT/%{_localstatedir}/www/html/
-cp -Rp tftpboot/* $RPM_BUILD_ROOT/%{_sharedstatedir}/tftpboot/
+cp -Rp tftpboot/rhel8 $RPM_BUILD_ROOT/%{_sharedstatedir}/tftpboot/
+cp -Rp tftpboot/bios/* $RPM_BUILD_ROOT/%{_sharedstatedir}/tftpboot/
 cp -Rp html/* $RPM_BUILD_ROOT/%{_localstatedir}/www/html/
 
 %clean
@@ -38,6 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc README.md 
 %{_sharedstatedir}/tftpboot/rhel8/*
+%{_sharedstatedir}/tftpboot/pxelinux.0
 %{_localstatedir}/www/html/rhel8/*
 
 %changelog
