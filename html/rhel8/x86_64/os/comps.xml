@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comps
+  PUBLIC '-//Red Hat, Inc.//DTD Comps info//EN'
+  'comps.dtd'>
+<comps>
+  <group>
+    <id>core</id>
+    <name>Core</name>
+    <description>Smallest possible installation</description>
+    <default>true</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">audit</packagereq>
+      <packagereq type="mandatory">basesystem</packagereq>
+      <packagereq type="mandatory">bash</packagereq>
+      <packagereq type="mandatory">coreutils</packagereq>
+      <packagereq type="mandatory">cronie</packagereq>
+      <packagereq type="mandatory">curl</packagereq>
+      <packagereq type="mandatory">dhcp-client</packagereq>
+      <packagereq type="mandatory">dnf</packagereq>
+      <packagereq type="mandatory">e2fsprogs</packagereq>
+      <packagereq type="mandatory">filesystem</packagereq>
+      <packagereq type="mandatory">firewalld</packagereq>
+      <packagereq type="mandatory">glibc</packagereq>
+      <packagereq type="mandatory">grubby</packagereq>
+      <packagereq type="mandatory">hostname</packagereq>
+      <packagereq type="mandatory">initscripts</packagereq>
+      <packagereq type="mandatory">iproute</packagereq>
+      <packagereq type="mandatory">iprutils</packagereq>
+      <packagereq type="mandatory">iputils</packagereq>
+      <packagereq type="mandatory">irqbalance</packagereq>
+      <packagereq type="mandatory">kbd</packagereq>
+      <packagereq type="mandatory">kexec-tools</packagereq>
+      <packagereq type="mandatory">less</packagereq>
+      <packagereq type="mandatory">man-db</packagereq>
+      <packagereq type="mandatory">ncurses</packagereq>
+      <packagereq type="mandatory">openssh-clients</packagereq>
+      <packagereq type="mandatory">openssh-server</packagereq>
+      <packagereq type="mandatory">parted</packagereq>
+      <packagereq type="mandatory">passwd</packagereq>
+      <packagereq type="mandatory">policycoreutils</packagereq>
+      <packagereq type="mandatory">procps-ng</packagereq>
+      <packagereq type="mandatory">rootfiles</packagereq>
+      <packagereq type="mandatory">rpm</packagereq>
+      <packagereq type="mandatory">selinux-policy-targeted</packagereq>
+      <packagereq type="mandatory">setup</packagereq>
+      <packagereq type="mandatory">shadow-utils</packagereq>
+      <packagereq type="mandatory">sssd-common</packagereq>
+      <packagereq type="mandatory">sssd-kcm</packagereq>
+      <packagereq type="mandatory">subscription-manager</packagereq>
+      <packagereq type="mandatory">sudo</packagereq>
+      <packagereq type="mandatory">systemd</packagereq>
+      <packagereq type="mandatory">tuned</packagereq>
+      <packagereq type="mandatory">util-linux</packagereq>
+      <packagereq type="mandatory">vim-minimal</packagereq>
+      <packagereq type="mandatory">xfsprogs</packagereq>
+      <packagereq type="mandatory">yum</packagereq>
+      <packagereq type="default">NetworkManager</packagereq>
+      <packagereq type="default">NetworkManager-team</packagereq>
+      <packagereq type="default">NetworkManager-tui</packagereq>
+      <packagereq type="default">authselect</packagereq>
+      <packagereq type="default">biosdevname</packagereq>
+      <packagereq type="default">dnf-plugins-core</packagereq>
+      <packagereq type="default">dracut-config-rescue</packagereq>
+      <packagereq type="default">iwl100-firmware</packagereq>
+      <packagereq type="default">iwl1000-firmware</packagereq>
+      <packagereq type="default">iwl105-firmware</packagereq>
+      <packagereq type="default">iwl135-firmware</packagereq>
+      <packagereq type="default">iwl2000-firmware</packagereq>
+      <packagereq type="default">iwl2030-firmware</packagereq>
+      <packagereq type="default">iwl3160-firmware</packagereq>
+      <packagereq type="default">iwl3945-firmware</packagereq>
+      <packagereq type="default">iwl4965-firmware</packagereq>
+      <packagereq type="default">iwl5000-firmware</packagereq>
+      <packagereq type="default">iwl5150-firmware</packagereq>
+      <packagereq type="default">iwl6000-firmware</packagereq>
+      <packagereq type="default">iwl6000g2a-firmware</packagereq>
+      <packagereq type="default">iwl6050-firmware</packagereq>
+      <packagereq type="default">iwl7260-firmware</packagereq>
+      <packagereq type="default">kernel-tools</packagereq>
+      <packagereq type="default">libsysfs</packagereq>
+      <packagereq type="default">linux-firmware</packagereq>
+      <packagereq type="default">lshw</packagereq>
+      <packagereq type="default">lsscsi</packagereq>
+      <packagereq type="default">microcode_ctl</packagereq>
+      <packagereq type="default">prefixdevname</packagereq>
+      <packagereq type="default">sg3_utils</packagereq>
+      <packagereq type="default">sg3_utils-libs</packagereq>
+      <packagereq type="optional">dracut-config-generic</packagereq>
+      <packagereq type="optional">dracut-network</packagereq>
+      <packagereq type="optional">rdma-core</packagereq>
+      <packagereq type="optional">selinux-policy-mls</packagereq>
+      <packagereq type="optional">tboot</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>hardware-support</id>
+    <name>Hardware Support</name>
+    <description>This group is a collection of tools for various hardware specific utilities.</description>
+    <default>true</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="default">bolt</packagereq>
+      <packagereq type="default">iwl100-firmware</packagereq>
+      <packagereq type="default">iwl1000-firmware</packagereq>
+      <packagereq type="default">iwl105-firmware</packagereq>
+      <packagereq type="default">iwl135-firmware</packagereq>
+      <packagereq type="default">iwl2000-firmware</packagereq>
+      <packagereq type="default">iwl2030-firmware</packagereq>
+      <packagereq type="default">iwl3160-firmware</packagereq>
+      <packagereq type="default">iwl3945-firmware</packagereq>
+      <packagereq type="default">iwl4965-firmware</packagereq>
+      <packagereq type="default">iwl5000-firmware</packagereq>
+      <packagereq type="default">iwl5150-firmware</packagereq>
+      <packagereq type="default">iwl6000-firmware</packagereq>
+      <packagereq type="default">iwl6000g2a-firmware</packagereq>
+      <packagereq type="default">iwl6000g2b-firmware</packagereq>
+      <packagereq type="default">iwl6050-firmware</packagereq>
+      <packagereq type="default">iwl7260-firmware</packagereq>
+      <packagereq type="default">libertas-usb8388-firmware</packagereq>
+      <packagereq type="default">usb_modeswitch</packagereq>
+      <packagereq type="optional">lsscsi</packagereq>
+      <packagereq type="optional">opensc</packagereq>
+      <packagereq type="optional">openssl-pkcs11</packagereq>
+      <packagereq type="optional">pcsc-lite</packagereq>
+      <packagereq type="optional">pcsc-lite-ccid</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>headless-management</id>
+    <name>Headless Management</name>
+    <description>Tools for managing the system without an attached graphical console.</description>
+    <default>true</default>
+    <uservisible>true</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">cockpit-bridge</packagereq>
+      <packagereq type="mandatory">cockpit-system</packagereq>
+      <packagereq type="mandatory">cockpit-ws</packagereq>
+      <packagereq type="mandatory">openssh-server</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>server-product</id>
+    <name>Server product core</name>
+    <description>Packages mandatory for the server product.</description>
+    <default>true</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">chrony</packagereq>
+      <packagereq type="mandatory">polkit</packagereq>
+      <packagereq type="mandatory">realmd</packagereq>
+      <packagereq type="mandatory">redhat-release</packagereq>
+      <packagereq type="mandatory">timedatex</packagereq>
+      <packagereq type="default">NetworkManager-team</packagereq>
+      <packagereq type="default">dhcp-client</packagereq>
+    </packagelist>
+  </group>
+  <environment>
+    <id>minimal-environment</id>
+    <name>Minimal Install</name>
+    <name xml:lang="as">নূন্যতম ইনস্টল</name>
+    <name xml:lang="cs">Minimální instalace</name>
+    <name xml:lang="cs_CZ">Minimální instalace</name>
+    <name xml:lang="de">Minimale Installation</name>
+    <name xml:lang="de_CH">Minimale Installation</name>
+    <name xml:lang="es">Instalación mínima</name>
+    <name xml:lang="es_ES">Instalación mínima</name>
+    <name xml:lang="fr">Installation minimale</name>
+    <name xml:lang="gu">ન્યૂનતમ સ્થાપન</name>
+    <name xml:lang="hi">न्यूनतम संस्थापन</name>
+    <name xml:lang="it">Installazione minima</name>
+    <name xml:lang="it_IT">Installazione minima</name>
+    <name xml:lang="ja">最小限のインストール</name>
+    <name xml:lang="ja_JP">最小限のインストール</name>
+    <name xml:lang="kn">ಕನಿಷ್ಟ ಅನುಸ್ಥಾಪನೆ</name>
+    <name xml:lang="ko">최소 설치 </name>
+    <name xml:lang="ml">ഏറ്റവും കുറഞ്ഞ ഇന്‍സ്റ്റോള്‍</name>
+    <name xml:lang="mr">किमान इंस्टॉल</name>
+    <name xml:lang="or">ସର୍ବନିମ୍ନ ସ୍ଥାପନ</name>
+    <name xml:lang="pa">ਘੱਟ ਤੋਂ ਘੱਟ ਇੰਸਟਾਲ</name>
+    <name xml:lang="pl">Minimalna instalacja</name>
+    <name xml:lang="ru">Минимальная установка</name>
+    <name xml:lang="ru_RU">Минимальная установка</name>
+    <name xml:lang="ta">குறைந்தபட்ச நிறுவல்</name>
+    <name xml:lang="ta_IN">குறைந்தபட்ச நிறுவல்</name>
+    <name xml:lang="te">కనీసపు సంస్థాపన</name>
+    <name xml:lang="uk">Мінімальна система</name>
+    <name xml:lang="uk_UA">Мінімальна система</name>
+    <name xml:lang="zh">最小型安裝</name>
+    <name xml:lang="zh_CN">最小安装</name>
+    <name xml:lang="zh_TW">最小型安裝</name>
+    <description>Basic functionality.</description>
+    <description xml:lang="as">মৌলি কাৰ্য্যকৰীতা।</description>
+    <description xml:lang="cs">Základní funkcionalita.</description>
+    <description xml:lang="cs_CZ">Základní funkcionalita.</description>
+    <description xml:lang="de">Grundlegende Funktionalität.</description>
+    <description xml:lang="de_CH">Grundlegende Funktionalität.</description>
+    <description xml:lang="es">Funcionalidad básica.</description>
+    <description xml:lang="es_ES">Funcionalidad básica.</description>
+    <description xml:lang="fr">Fonctionnalité de base.</description>
+    <description xml:lang="gu">મૂળભૂત વિધેય.</description>
+    <description xml:lang="hi">मौलिक प्रकार्यात्मकता.</description>
+    <description xml:lang="it">Funzione di base.</description>
+    <description xml:lang="it_IT">Funzione di base.</description>
+    <description xml:lang="ja">基本的な機能です。</description>
+    <description xml:lang="ja_JP">基本的な機能です。</description>
+    <description xml:lang="kn">ಮೂಲಭೂತ ಕ್ರಿಯಾಶೀಲತೆ.</description>
+    <description xml:lang="ko">기본적인 기능입니다.</description>
+    <description xml:lang="ml">അടിസ്ഥാന പ്രവൃത്തിവിശേഷണം.</description>
+    <description xml:lang="mr">मूळ कार्यक्षमता.</description>
+    <description xml:lang="or">ସାଧାରଣ କାର୍ଯ୍ୟକାରିତା।</description>
+    <description xml:lang="pa">ਮੁੱਢਲੀ ਕਾਰਜਸ਼ੀਲਤਾ।</description>
+    <description xml:lang="pl">Podstawowa funkcjonalność.</description>
+    <description xml:lang="ru">Базовая функциональность.</description>
+    <description xml:lang="ru_RU">Базовая функциональность.</description>
+    <description xml:lang="ta">அடிப்படை செயலம்சம்.</description>
+    <description xml:lang="ta_IN">அடிப்படை செயலம்சம்.</description>
+    <description xml:lang="te">ప్రాథమిక ఫంక్షనాలిటి.</description>
+    <description xml:lang="uk">Основні можливості.</description>
+    <description xml:lang="uk_UA">Основні можливості.</description>
+    <description xml:lang="zh">基本功能。</description>
+    <description xml:lang="zh_CN">基本功能。</description>
+    <description xml:lang="zh_TW">基本功能。</description>
+    <display_order>2</display_order>
+    <grouplist>
+      <groupid>core</groupid>
+    </grouplist>
+    <optionlist>
+      <groupid>guest-agents</groupid>
+      <groupid>standard</groupid>
+    </optionlist>
+  </environment>
+</comps>

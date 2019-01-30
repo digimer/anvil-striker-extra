@@ -3,7 +3,7 @@
 %define anvilgroup    admin
 Name:           anvil-striker-extra
 Version:        3.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Alteeve Anvil! Striker dashboard extras
 
 License:        GPLv2+
@@ -37,10 +37,13 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %doc README.md 
-%{_sharedstatedir}/tftpboot/fedora28/*
-%{_localstatedir}/www/html/fedora28/*
+%{_sharedstatedir}/tftpboot/rhel8/*
+%{_localstatedir}/www/html/rhel8/*
 
 %changelog
+* Fri Jan 25 2019 Madison Kelly <mkelly@alteeve.ca> 3.0-3
+- Started migration to RHEL8.
+
 * Mon Nov 05 2018 Madison Kelly <mkelly@alteeve.ca> 3.0-2
 - Added the install.img file.
 - Added a custome comps.xml for fedora28.
