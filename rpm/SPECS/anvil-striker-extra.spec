@@ -3,7 +3,7 @@
 %define anvilgroup    admin
 Name:           anvil-striker-extra
 Version:        3.0
-Release:        3%{?dist}
+Release:        5%{?dist}
 Summary:        Alteeve Anvil! Striker dashboard extras
 
 License:        GPLv2+
@@ -43,6 +43,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_localstatedir}/www/html/rhel8/*
 
 %changelog
+* Tue Jan 07 2020 Madison Kelly <mkelly@alteeve.ca> 3.0-5
+- Updated to RHEL 8.1 official release.
+- Added modules.yaml
+
+* Tue Jul 02 2019 Madison Kelly <mkelly@alteeve.ca> 3.0-4
+- Updated to RHEL 8.0 official release.
+
 * Fri Jan 25 2019 Madison Kelly <mkelly@alteeve.ca> 3.0-3
 - Started migration to RHEL8.
 
